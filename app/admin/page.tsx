@@ -86,11 +86,11 @@ const AdminPage = () => {
   // Patient Details Modal Component
   const PatientDetailsModal = ({ patient, onClose }) => (
     <div className="fixed inset-0 bg-black/70 backdrop-blur-md flex items-center justify-center z-50 p-4 animate-in fade-in-0 duration-300">
-      <div className="bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 rounded-3xl border border-slate-700/50 shadow-2xl max-w-5xl w-full max-h-[90vh] overflow-y-auto animate-in slide-in-from-bottom-4 duration-300">
+      <div className="bg-linear-to-br from-slate-900 via-slate-800 to-slate-900 rounded-3xl border border-slate-700/50 shadow-2xl max-w-5xl w-full max-h-[90vh] overflow-y-auto animate-in slide-in-from-bottom-4 duration-300">
         {/* Modal Header */}
-        <div className="sticky top-0 bg-gradient-to-r from-slate-800/95 to-slate-900/95 backdrop-blur-xl p-6 border-b border-slate-700/50 flex items-center justify-between rounded-t-3xl">
+        <div className="sticky top-0 bg-linear-to-r from-slate-800/95 to-slate-900/95 backdrop-blur-xl p-6 border-b border-slate-700/50 flex items-center justify-between rounded-t-3xl">
           <div className="flex items-center space-x-4">
-            <div className="w-12 h-12 bg-gradient-to-br from-blue-500 to-purple-600 rounded-2xl flex items-center justify-center shadow-lg">
+            <div className="w-12 h-12 bg-linear-to-br from-blue-500 to-purple-600 rounded-2xl flex items-center justify-center shadow-lg">
               <User className="w-6 h-6 text-white" />
             </div>
             <div>
@@ -108,9 +108,9 @@ const AdminPage = () => {
         
         <div className="p-6 space-y-6">
           {/* Personal Information */}
-          <div className="bg-gradient-to-br from-slate-800/50 to-slate-700/30 rounded-2xl p-6 border border-slate-600/30">
+          <div className="bg-linear-to-br from-slate-800/50 to-slate-700/30 rounded-2xl p-6 border border-slate-600/30">
             <div className="flex items-center mb-4">
-              <div className="w-8 h-8 bg-gradient-to-br from-blue-500 to-cyan-500 rounded-lg flex items-center justify-center mr-3">
+              <div className="w-8 h-8 bg-linear-to-br from-blue-500 to-cyan-500 rounded-lg flex items-center justify-center mr-3">
                 <User className="w-4 h-4 text-white" />
               </div>
               <h3 className="text-lg font-semibold text-white">Personal Information</h3>
@@ -148,9 +148,9 @@ const AdminPage = () => {
           </div>
 
           {/* Emergency Contact */}
-          <div className="bg-gradient-to-br from-red-900/20 to-orange-900/20 rounded-2xl p-6 border border-red-700/30">
+          <div className="bg-linear-to-br from-red-900/20 to-orange-900/20 rounded-2xl p-6 border border-red-700/30">
             <div className="flex items-center mb-4">
-              <div className="w-8 h-8 bg-gradient-to-br from-red-500 to-orange-500 rounded-lg flex items-center justify-center mr-3">
+              <div className="w-8 h-8 bg-linear-to-br from-red-500 to-orange-500 rounded-lg flex items-center justify-center mr-3">
                 <Phone className="w-4 h-4 text-white" />
               </div>
               <h3 className="text-lg font-semibold text-white">Emergency Contact</h3>
@@ -176,9 +176,9 @@ const AdminPage = () => {
           </div>
 
           {/* Medical Information */}
-          <div className="bg-gradient-to-br from-green-900/20 to-emerald-900/20 rounded-2xl p-6 border border-green-700/30">
+          <div className="bg-linear-to-br from-green-900/20 to-emerald-900/20 rounded-2xl p-6 border border-green-700/30">
             <div className="flex items-center mb-4">
-              <div className="w-8 h-8 bg-gradient-to-br from-green-500 to-emerald-500 rounded-lg flex items-center justify-center mr-3">
+              <div className="w-8 h-8 bg-linear-to-br from-green-500 to-emerald-500 rounded-lg flex items-center justify-center mr-3">
                 <Activity className="w-4 h-4 text-white" />
               </div>
               <h3 className="text-lg font-semibold text-white">Medical Information</h3>
@@ -208,9 +208,9 @@ const AdminPage = () => {
           </div>
 
           {/* Insurance & Identification */}
-          <div className="bg-gradient-to-br from-purple-900/20 to-indigo-900/20 rounded-2xl p-6 border border-purple-700/30">
+          <div className="bg-linear-to-br from-purple-900/20 to-indigo-900/20 rounded-2xl p-6 border border-purple-700/30">
             <div className="flex items-center mb-4">
-              <div className="w-8 h-8 bg-gradient-to-br from-purple-500 to-indigo-500 rounded-lg flex items-center justify-center mr-3">
+              <div className="w-8 h-8 bg-linear-to-br from-purple-500 to-indigo-500 rounded-lg flex items-center justify-center mr-3">
                 <FileText className="w-4 h-4 text-white" />
               </div>
               <h3 className="text-lg font-semibold text-white">Insurance & Identification</h3>
@@ -244,9 +244,9 @@ const AdminPage = () => {
           </div>
 
           {/* Consent Information */}
-          <div className="bg-gradient-to-br from-amber-900/20 to-yellow-900/20 rounded-2xl p-6 border border-amber-700/30">
+          <div className="bg-linear-to-br from-amber-900/20 to-yellow-900/20 rounded-2xl p-6 border border-amber-700/30">
             <div className="flex items-center mb-4">
-              <div className="w-8 h-8 bg-gradient-to-br from-amber-500 to-yellow-500 rounded-lg flex items-center justify-center mr-3">
+              <div className="w-8 h-8 bg-linear-to-br from-amber-500 to-yellow-500 rounded-lg flex items-center justify-center mr-3">
                 <UserCheck className="w-4 h-4 text-white" />
               </div>
               <h3 className="text-lg font-semibold text-white">Consent Status</h3>
@@ -274,9 +274,9 @@ const AdminPage = () => {
           </div>
 
           {/* System Information */}
-          <div className="bg-gradient-to-br from-slate-800/50 to-slate-700/30 rounded-2xl p-6 border border-slate-600/30">
+          <div className="bg-linear-to-br from-slate-800/50 to-slate-700/30 rounded-2xl p-6 border border-slate-600/30">
             <div className="flex items-center mb-4">
-              <div className="w-8 h-8 bg-gradient-to-br from-slate-500 to-slate-600 rounded-lg flex items-center justify-center mr-3">
+              <div className="w-8 h-8 bg-linear-to-br from-slate-500 to-slate-600 rounded-lg flex items-center justify-center mr-3">
                 <Settings className="w-4 h-4 text-white" />
               </div>
               <h3 className="text-lg font-semibold text-white">System Information</h3>
@@ -307,7 +307,7 @@ const AdminPage = () => {
 
   if (loading) {
     return (
-      <div className="min-h-screen bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 flex items-center justify-center">
+      <div className="min-h-screen bg-linear-to-br from-slate-900 via-slate-800 to-slate-900 flex items-center justify-center">
         <div className="text-center">
           <div className="w-16 h-16 border-4 border-blue-500/30 border-t-blue-500 rounded-full animate-spin mx-auto mb-4"></div>
           <div className="text-white text-xl font-medium">Loading Dashboard...</div>
@@ -318,7 +318,7 @@ const AdminPage = () => {
   }
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-950/90 via-slate-950/90 to-transparent backdrop-blur-sm">
+    <div className="min-h-screen bg-linear-to-br from-slate-950/90 via-slate-950/90 to-transparent backdrop-blur-sm">
       {/* Enhanced Header */}
       <header className="bg-slate-900/80 backdrop-blur-2xl border-b border-slate-700/50 sticky top-0 z-40 shadow-xl">
         <div className="mx-auto max-w-7xl px-6 py-4">
@@ -341,14 +341,14 @@ const AdminPage = () => {
               </button>
               
               {/* Admin Badge */}
-              <div className="px-4 py-2 bg-gradient-to-r from-blue-600 via-green-700 to-blue-600 rounded-2xl shadow-lg">
+              <div className="px-4 py-2 bg-linear-to-r from-blue-600 via-green-700 to-blue-600 rounded-2xl shadow-lg">
                 <p className="text-white font-semibold text-sm">Admin Dashboard</p>
               </div>
               
               {/* Profile Dropdown */}
               <div className="relative group">
                 <button className="flex items-center space-x-2 p-2 bg-slate-700/50 hover:bg-slate-600/50 rounded-xl transition-all duration-200">
-                  <div className="w-8 h-8 rounded-xl bg-gradient-to-br from-blue-500 to-purple-600 flex items-center justify-center shadow-lg">
+                  <div className="w-8 h-8 rounded-xl bg-linear-to-br from-blue-500 to-purple-600 flex items-center justify-center shadow-lg">
                     <User className="w-4 h-4 text-white" />
                   </div>
                   <ChevronDown className="w-4 h-4 text-slate-400 group-hover:text-white transition-colors" />
@@ -364,7 +364,7 @@ const AdminPage = () => {
         <section className="space-y-4">
           <div className="flex items-center justify-between">
             <div>
-              <h1 className="text-5xl font-bold bg-gradient-to-r from-white via-blue-100 to-purple-200 bg-clip-text ">
+              <h1 className="text-5xl font-bold bg-linear-to-r from-white via-blue-100 to-purple-200 bg-clip-text ">
                 Welcome back 👋
               </h1>
               <p className="text-slate-400 text-lg mt-2">
@@ -381,7 +381,7 @@ const AdminPage = () => {
               </div>
             </div>
             <div className="hidden md:block">
-              <div className="w-32 h-32 bg-gradient-to-br from-blue-500/20 to-purple-600/20 rounded-3xl flex items-center justify-center backdrop-blur-xl border border-slate-700/50">
+              <div className="w-32 h-32 bg-linear-to-br from-blue-500/20 to-purple-600/20 rounded-3xl flex items-center justify-center backdrop-blur-xl border border-slate-700/50">
                 <Activity className="w-16 h-16 text-blue-400" />
               </div>
             </div>
@@ -390,7 +390,7 @@ const AdminPage = () => {
 
         {/* Enhanced Stats Cards */}
         <section className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-          <div className="group bg-gradient-to-br from-slate-800/80 to-slate-900/80 backdrop-blur-xl rounded-3xl p-6 border border-slate-700/50 hover:border-blue-500/50 transition-all duration-300 hover:scale-105 hover:shadow-2xl shadow-lg">
+          <div className="group bg-linear-to-br from-slate-800/80 to-slate-900/80 backdrop-blur-xl rounded-3xl p-6 border border-slate-700/50 hover:border-blue-500/50 transition-all duration-300 hover:scale-105 hover:shadow-2xl shadow-lg">
             <div className="flex items-center justify-between">
               <div>
                 <p className="text-slate-400 text-sm font-medium">Scheduled</p>
@@ -400,13 +400,13 @@ const AdminPage = () => {
                   <p className="text-green-400 text-sm font-medium">+12% from last week</p>
                 </div>
               </div>
-              <div className="w-16 h-16 bg-gradient-to-br from-blue-500/20 to-cyan-500/20 rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300 shadow-lg">
+              <div className="w-16 h-16 bg-linear-to-br from-blue-500/20 to-cyan-500/20 rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300 shadow-lg">
                 <Calendar className="w-8 h-8 text-blue-400" />
               </div>
             </div>
           </div>
 
-          <div className="group bg-gradient-to-br from-slate-800/80 to-slate-900/80 backdrop-blur-xl rounded-3xl p-6 border border-slate-700/50 hover:border-yellow-500/50 transition-all duration-300 hover:scale-105 hover:shadow-2xl shadow-lg">
+          <div className="group bg-linear-to-br from-slate-800/80 to-slate-900/80 backdrop-blur-xl rounded-3xl p-6 border border-slate-700/50 hover:border-yellow-500/50 transition-all duration-300 hover:scale-105 hover:shadow-2xl shadow-lg">
             <div className="flex items-center justify-between">
               <div>
                 <p className="text-slate-400 text-sm font-medium">Pending</p>
@@ -416,13 +416,13 @@ const AdminPage = () => {
                   <p className="text-yellow-400 text-sm font-medium">Awaiting confirmation</p>
                 </div>
               </div>
-              <div className="w-16 h-16 bg-gradient-to-br from-yellow-500/20 to-orange-500/20 rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300 shadow-lg">
+              <div className="w-16 h-16 bg-linear-to-br from-yellow-500/20 to-orange-500/20 rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300 shadow-lg">
                 <Clock className="w-8 h-8 text-yellow-400" />
               </div>
             </div>
           </div>
 
-          <div className="group bg-gradient-to-br from-slate-800/80 to-slate-900/80 backdrop-blur-xl rounded-3xl p-6 border border-slate-700/50 hover:border-red-500/50 transition-all duration-300 hover:scale-105 hover:shadow-2xl shadow-lg">
+          <div className="group bg-linear-to-br from-slate-800/80 to-slate-900/80 backdrop-blur-xl rounded-3xl p-6 border border-slate-700/50 hover:border-red-500/50 transition-all duration-300 hover:scale-105 hover:shadow-2xl shadow-lg">
             <div className="flex items-center justify-between">
               <div>
                 <p className="text-slate-400 text-sm font-medium">Cancelled</p>
@@ -432,13 +432,13 @@ const AdminPage = () => {
                   <p className="text-red-400 text-sm font-medium">-5% from last week</p>
                 </div>
               </div>
-              <div className="w-16 h-16 bg-gradient-to-br from-red-500/20 to-pink-500/20 rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300 shadow-lg">
+              <div className="w-16 h-16 bg-linear-to-br from-red-500/20 to-pink-500/20 rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300 shadow-lg">
                 <X className="w-8 h-8 text-red-400" />
               </div>
             </div>
           </div>
 
-          <div className="group bg-gradient-to-br from-slate-800/80 to-slate-900/80 backdrop-blur-xl rounded-3xl p-6 border border-slate-700/50 hover:border-purple-500/50 transition-all duration-300 hover:scale-105 hover:shadow-2xl shadow-lg">
+          <div className="group bg-linear-to-br from-slate-800/80 to-slate-900/80 backdrop-blur-xl rounded-3xl p-6 border border-slate-700/50 hover:border-purple-500/50 transition-all duration-300 hover:scale-105 hover:shadow-2xl shadow-lg">
             <div className="flex items-center justify-between">
               <div>
                 <p className="text-slate-400 text-sm font-medium">Total Patients</p>
@@ -448,7 +448,7 @@ const AdminPage = () => {
                   <p className="text-purple-400 text-sm font-medium">Registered patients</p>
                 </div>
               </div>
-              <div className="w-16 h-16 bg-gradient-to-br from-purple-500/20 to-indigo-500/20 rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300 shadow-lg">
+              <div className="w-16 h-16 bg-linear-to-br from-purple-500/20 to-indigo-500/20 rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300 shadow-lg">
                 <UserCheck className="w-8 h-8 text-purple-400" />
               </div>
             </div>
@@ -467,7 +467,7 @@ const AdminPage = () => {
               }}
               className={`flex-1 py-4 px-6 rounded-xl font-medium transition-all duration-300 flex items-center justify-center space-x-2 ${
                 activeTab === 'appointments'
-                  ? 'bg-gradient-to-r from-blue-600 to-blue-700 text-white shadow-lg transform scale-105'
+                  ? 'bg-linear-to-r from-blue-600 to-blue-700 text-white shadow-lg transform scale-105'
                   : 'text-slate-400 hover:text-white hover:bg-slate-700/50'
               }`}
             >
@@ -484,7 +484,7 @@ const AdminPage = () => {
               }}
              className={`flex-1 py-4 px-6 rounded-xl font-medium transition-all duration-300 flex items-center justify-center space-x-2 ${
                activeTab === 'patients'
-                 ? 'bg-gradient-to-r from-blue-600 to-green-700 text-white shadow-lg transform scale-105'
+                 ? 'bg-linear-to-r from-blue-600 to-green-700 text-white shadow-lg transform scale-105'
                  : 'text-slate-400 hover:text-white hover:bg-slate-700/50'
              }`}
            >
@@ -496,7 +496,7 @@ const AdminPage = () => {
        </section>
 
        {/* Enhanced Search and Filter Section */}
-       <section className="bg-gradient-to-br from-slate-800/80 to-slate-900/80 backdrop-blur-xl rounded-3xl p-6 border border-slate-700/50 shadow-xl">
+       <section className="bg-linear-to-br from-slate-800/80 to-slate-900/80 backdrop-blur-xl rounded-3xl p-6 border border-slate-700/50 shadow-xl">
          <div className="flex flex-col space-y-4">
            <div className="flex items-center justify-between">
              <div>
@@ -577,7 +577,7 @@ const AdminPage = () => {
                    setStatusFilter('');
                    setDateFilter('');
                  }}
-                 className="px-6 py-4 bg-gradient-to-r from-red-600 to-red-700 hover:from-red-700 hover:to-red-800 text-white rounded-2xl transition-all duration-300 flex items-center space-x-2 hover:scale-105 shadow-lg"
+                 className="px-6 py-4 bg-linear-to-r from-red-600 to-red-700 hover:from-red-700 hover:to-red-800 text-white rounded-2xl transition-all duration-300 flex items-center space-x-2 hover:scale-105 shadow-lg"
                >
                  <X className="w-4 h-4" />
                  <span>Clear Filters</span>
@@ -590,8 +590,8 @@ const AdminPage = () => {
        {/* Enhanced Content Section */}
        {activeTab === 'appointments' ? (
          /* Enhanced Appointments Table */
-         <section className="bg-gradient-to-br from-slate-800/80 to-slate-900/80 backdrop-blur-xl rounded-3xl border border-slate-700/50 overflow-hidden shadow-2xl">
-           <div className="p-6 border-b border-slate-700/50 bg-gradient-to-r from-slate-800/50 to-slate-700/50">
+         <section className="bg-linear-to-br from-slate-800/80 to-slate-900/80 backdrop-blur-xl rounded-3xl border border-slate-700/50 overflow-hidden shadow-2xl">
+           <div className="p-6 border-b border-slate-700/50 bg-linear-to-r from-slate-800/50 to-slate-700/50">
              <div className="flex items-center justify-between">
                <div>
                  <h3 className="text-xl font-bold text-white">
@@ -616,8 +616,8 @@ const AdminPage = () => {
          </section>
        ) : (
          /* Enhanced Patient Records */
-         <section className="bg-gradient-to-br from-slate-800/80 to-slate-900/80 backdrop-blur-xl rounded-3xl border border-slate-700/50 overflow-hidden shadow-2xl">
-           <div className="p-6 border-b border-slate-700/50 bg-gradient-to-r from-slate-800/50 to-slate-700/50">
+         <section className="bg-linear-to-br from-slate-800/80 to-slate-900/80 backdrop-blur-xl rounded-3xl border border-slate-700/50 overflow-hidden shadow-2xl">
+           <div className="p-6 border-b border-slate-700/50 bg-linear-to-r from-slate-800/50 to-slate-700/50">
              <div className="flex items-center justify-between">
                <div>
                  <h3 className="text-xl font-bold text-white">
@@ -638,13 +638,13 @@ const AdminPage = () => {
                  {filteredPatients.map((patient, index) => (
                    <div 
                      key={patient.$id} 
-                     className="group bg-gradient-to-r from-slate-700/30 to-slate-600/30 rounded-2xl p-6 hover:from-slate-600/40 hover:to-slate-500/40 transition-all duration-300 border border-slate-600/30 hover:border-slate-500/50 hover:shadow-xl animate-in slide-in-from-bottom-4"
+                     className="group bg-linear-to-r from-slate-700/30 to-slate-600/30 rounded-2xl p-6 hover:from-slate-600/40 hover:to-slate-500/40 transition-all duration-300 border border-slate-600/30 hover:border-slate-500/50 hover:shadow-xl animate-in slide-in-from-bottom-4"
                      style={{ animationDelay: `${index * 50}ms` }}
                    >
                      <div className="flex items-center justify-between">
                        <div className="flex items-center space-x-6">
                          <div className="relative">
-                           <div className="w-16 h-16 bg-gradient-to-br from-blue-500 to-purple-600 rounded-2xl flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform duration-300">
+                           <div className="w-16 h-16 bg-linear-to-br from-blue-500 to-purple-600 rounded-2xl flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform duration-300">
                              <User className="w-8 h-8 text-white" />
                            </div>
                            <div className="absolute -bottom-1 -right-1 w-5 h-5 bg-green-500 rounded-full border-2 border-slate-800 flex items-center justify-center">
@@ -683,7 +683,7 @@ const AdminPage = () => {
                          </div>
                          <button
                            onClick={() => setSelectedPatient(patient)}
-                           className="group/btn px-6 py-3 bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white rounded-2xl transition-all duration-300 flex items-center space-x-2 hover:scale-105 shadow-lg hover:shadow-xl"
+                           className="group/btn px-6 py-3 bg-linear-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white rounded-2xl transition-all duration-300 flex items-center space-x-2 hover:scale-105 shadow-lg hover:shadow-xl"
                          >
                            <Eye className="w-4 h-4 group-hover/btn:scale-110 transition-transform" />
                            <span>View Details</span>
@@ -695,7 +695,7 @@ const AdminPage = () => {
                </div>
              ) : (
                <div className="text-center py-16">
-                 <div className="w-24 h-24 bg-gradient-to-br from-slate-700 to-slate-600 rounded-3xl flex items-center justify-center mx-auto mb-6">
+                 <div className="w-24 h-24 bg-linear-to-br from-slate-700 to-slate-600 rounded-3xl flex items-center justify-center mx-auto mb-6">
                    <User className="w-12 h-12 text-slate-400" />
                  </div>
                  <h3 className="text-white text-lg font-semibold mb-2">No Patients Found</h3>
@@ -705,7 +705,7 @@ const AdminPage = () => {
                  {searchTerm && (
                    <button
                      onClick={() => setSearchTerm('')}
-                     className="px-6 py-3 bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white rounded-2xl transition-all duration-300 hover:scale-105"
+                     className="px-6 py-3 bg-linear-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white rounded-2xl transition-all duration-300 hover:scale-105"
                    >
                      Clear Search
                    </button>
@@ -718,7 +718,7 @@ const AdminPage = () => {
 
        {/* Enhanced Quick Actions */}
        <section className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
-         <button className="group bg-gradient-to-br from-blue-600 via-blue-700 to-blue-800 hover:from-blue-700 hover:via-blue-800 hover:to-blue-900 text-white rounded-3xl p-6 transition-all duration-300 hover:scale-105 hover:shadow-2xl shadow-lg border border-blue-500/20">
+         <button className="group bg-linear-to-br from-blue-600 via-blue-700 to-blue-800 hover:from-blue-700 hover:via-blue-800 hover:to-blue-900 text-white rounded-3xl p-6 transition-all duration-300 hover:scale-105 hover:shadow-2xl shadow-lg border border-blue-500/20">
            <div className="flex items-center justify-between mb-4">
              <Calendar className="w-8 h-8 group-hover:scale-110 transition-transform duration-300" />
              <div className="w-2 h-2 bg-white/50 rounded-full group-hover:bg-white transition-colors"></div>
@@ -729,7 +729,7 @@ const AdminPage = () => {
          
          <button 
            onClick={() => setActiveTab('patients')}
-           className="group bg-gradient-to-br from-green-600 via-green-700 to-green-800 hover:from-green-700 hover:via-green-800 hover:to-green-900 text-white rounded-3xl p-6 transition-all duration-300 hover:scale-105 hover:shadow-2xl shadow-lg border border-green-500/20"
+           className="group bg-linear-to-br from-green-600 via-green-700 to-green-800 hover:from-green-700 hover:via-green-800 hover:to-green-900 text-white rounded-3xl p-6 transition-all duration-300 hover:scale-105 hover:shadow-2xl shadow-lg border border-green-500/20"
          >
            <div className="flex items-center justify-between mb-4">
              <User className="w-8 h-8 group-hover:scale-110 transition-transform duration-300" />
@@ -739,7 +739,7 @@ const AdminPage = () => {
            <p className="text-green-100 text-sm mt-1">Access patient information</p>
          </button>
          
-         <button className="group bg-gradient-to-br from-purple-600 via-purple-700 to-purple-800 hover:from-purple-700 hover:via-purple-800 hover:to-purple-900 text-white rounded-3xl p-6 transition-all duration-300 hover:scale-105 hover:shadow-2xl shadow-lg border border-purple-500/20">
+         <button className="group bg-linear-to-br from-purple-600 via-purple-700 to-purple-800 hover:from-purple-700 hover:via-purple-800 hover:to-purple-900 text-white rounded-3xl p-6 transition-all duration-300 hover:scale-105 hover:shadow-2xl shadow-lg border border-purple-500/20">
            <div className="flex items-center justify-between mb-4">
              <Phone className="w-8 h-8 group-hover:scale-110 transition-transform duration-300" />
              <div className="w-2 h-2 bg-white/50 rounded-full group-hover:bg-white transition-colors"></div>
@@ -748,7 +748,7 @@ const AdminPage = () => {
            <p className="text-purple-100 text-sm mt-1">Reach out to patients</p>
          </button>
          
-         <button className="group bg-gradient-to-br from-orange-600 via-orange-700 to-orange-800 hover:from-orange-700 hover:via-orange-800 hover:to-orange-900 text-white rounded-3xl p-6 transition-all duration-300 hover:scale-105 hover:shadow-2xl shadow-lg border border-orange-500/20">
+         <button className="group bg-linear-to-br from-orange-600 via-orange-700 to-orange-800 hover:from-orange-700 hover:via-orange-800 hover:to-orange-900 text-white rounded-3xl p-6 transition-all duration-300 hover:scale-105 hover:shadow-2xl shadow-lg border border-orange-500/20">
            <div className="flex items-center justify-between mb-4">
              <Mail className="w-8 h-8 group-hover:scale-110 transition-transform duration-300" />
              <div className="w-2 h-2 bg-white/50 rounded-full group-hover:bg-white transition-colors"></div>
