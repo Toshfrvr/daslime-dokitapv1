@@ -204,7 +204,7 @@ const RegisterForm = ({ user }: { user: User }) => {
             <RadioGroupItem 
               value={option} 
               id={option}
-              className="border-2 border-slate-600 data-[state=checked]:bg-gradient-to-r data-[state=checked]:from-blue-500 data-[state=checked]:to-purple-500 data-[state=checked]:border-transparent"
+              className="border-2 border-slate-600 data-[state=checked]:bg-linear-to-r data-[state=checked]:from-blue-500 data-[state=checked]:to-purple-500 data-[state=checked]:border-transparent"
             />
             <Label 
               htmlFor={option} 
@@ -472,31 +472,31 @@ const RegisterForm = ({ user }: { user: User }) => {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-950 via-slate-900 to-slate-950">
+    <div className="min-h-screen bg-linear-to-br from-slate-950 via-slate-900 to-slate-950">
       <div className="fixed inset-0 overflow-hidden pointer-events-none">
-        <div className="absolute -top-40 -right-40 w-96 h-96 bg-gradient-to-br from-blue-600/20 via-purple-600/20 to-pink-600/20 rounded-full blur-3xl animate-pulse" />
-        <div className="absolute -bottom-40 -left-40 w-96 h-96 bg-gradient-to-tr from-green-600/20 via-blue-600/20 to-purple-600/20 rounded-full blur-3xl animate-pulse animation-delay-2000" />
-        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-gradient-to-r from-cyan-600/10 via-blue-600/10 to-purple-600/10 rounded-full blur-3xl animate-pulse animation-delay-4000" />
+        <div className="absolute -top-40 -right-40 w-96 h-96 bg-linear-to-br from-blue-600/20 via-purple-600/20 to-pink-600/20 rounded-full blur-3xl animate-pulse" />
+        <div className="absolute -bottom-40 -left-40 w-96 h-96 bg-linear-to-tr from-green-600/20 via-blue-600/20 to-purple-600/20 rounded-full blur-3xl animate-pulse animation-delay-2000" />
+        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-linear-to-r from-cyan-600/10 via-blue-600/10 to-purple-600/10 rounded-full blur-3xl animate-pulse animation-delay-4000" />
       </div>
 
       <Form {...form}>
         <form onSubmit={form.handleSubmit(onSubmit)} className="relative z-10">
           <section className="relative min-h-[30vh] md:min-h-[40vh] flex items-center justify-center px-4 sm:px-6 lg:px-8 overflow-hidden">
-            <div className="absolute inset-0 bg-gradient-to-br from-slate-950/90 via-slate-900/50 to-transparent backdrop-blur-sm" />
+            <div className="absolute inset-0 bg-linear-to-br from-slate-950/90 via-slate-900/50 to-transparent backdrop-blur-sm" />
             
             <div className="relative z-10 text-center max-w-4xl mx-auto">
               <div className="mb-4 md:mb-8 flex flex-col md:flex-row items-center justify-center gap-2 md:gap-4">
                 <div className="relative">
-                  <div className="absolute inset-0 bg-gradient-to-r from-blue-500 to-purple-500 rounded-full blur-xl opacity-30 animate-pulse" />
+                  <div className="absolute inset-0 bg-linear-to-r from-blue-500 to-purple-500 rounded-full blur-xl opacity-30 animate-pulse" />
                   <span className="relative text-3xl sm:text-4xl md:text-5xl animate-bounce filter drop-shadow-2xl">
                     👋
                   </span>
                 </div>
                 <div className="text-center md:text-left">
-                  <h1 className="bg-gradient-to-r from-white via-blue-100 to-purple-100 bg-clip-text text-transparent text-2xl sm:text-3xl md:text-4xl font-black tracking-tight leading-tight">
+                  <h1 className="bg-linear-to-r from-white via-blue-100 to-purple-100 bg-clip-text text-transparent text-2xl sm:text-3xl md:text-4xl font-black tracking-tight leading-tight">
                     Welcome,
                   </h1>
-                  <h2 className="bg-gradient-to-r from-blue-700 via-green-400 to-pink-400 bg-clip-text text-transparent text-xl sm:text-2xl md:text-3xl font-bold tracking-tight animate-pulse">
+                  <h2 className="bg-linear-to-r from-blue-700 via-green-400 to-pink-400 bg-clip-text text-transparent text-xl sm:text-2xl md:text-3xl font-bold tracking-tight animate-pulse">
                     {user.name.split(' ')[0]}!
                   </h2>
                 </div>
@@ -504,14 +504,14 @@ const RegisterForm = ({ user }: { user: User }) => {
               
               <p className="text-slate-300 text-sm sm:text-base leading-relaxed mb-4 md:mb-8 max-w-2xl mx-auto px-2">
                 Your health journey begins here. Let's create your personalized 
-                <span className="bg-gradient-to-r from-blue-700 to-green-400 bg-clip-text text-transparent font-semibold"> health profile </span>
+                <span className="bg-linear-to-r from-blue-700 to-green-400 bg-clip-text text-transparent font-semibold"> health profile </span>
                 with precision and care.
               </p>
             </div>
           </section>
 
           <div className="relative z-10 max-w-4xl mx-auto px-2 sm:px-4 md:px-6 mb-8 md:mb-12">
-            <div className="bg-gradient-to-br from-slate-900/80 to-slate-800/80 backdrop-blur-xl rounded-2xl md:rounded-3xl border border-slate-700/50 p-4 md:p-6 shadow-2xl">
+            <div className="bg-linear-to-br from-slate-900/80 to-slate-800/80 backdrop-blur-xl rounded-2xl md:rounded-3xl border border-slate-700/50 p-4 md:p-6 shadow-2xl">
               <div className={`flex ${isMobile ? 'flex-col gap-2' : 'justify-between items-center'}`}>
                 {steps.map((step, index) => (
                   <div key={step.id} className={`flex items-center ${isMobile ? 'w-full' : 'flex-1'}`}>
@@ -521,9 +521,9 @@ const RegisterForm = ({ user }: { user: User }) => {
                       className={`
                         relative flex ${isMobile ? 'flex-row items-center gap-3 p-3 w-full' : 'flex-col items-center justify-center p-4'} rounded-xl md:rounded-2xl transition-all duration-500 group cursor-pointer
                         ${currentStep === step.id 
-                          ? 'bg-gradient-to-r from-blue-700 to-blue-700 shadow-lg scale-105' 
+                          ? 'bg-linear-to-r from-blue-700 to-blue-700 shadow-lg scale-105' 
                           : completedSteps.includes(step.id)
-                          ? 'bg-gradient-to-r from-green-700 to-teal-500 shadow-md hover:scale-102'
+                          ? 'bg-linear-to-r from-green-700 to-teal-500 shadow-md hover:scale-102'
                           : 'bg-slate-800/50 hover:bg-slate-700/50'
                         }
                       `}
@@ -561,7 +561,7 @@ const RegisterForm = ({ user }: { user: User }) => {
                       )}
                       
                       {currentStep === step.id && (
-                        <div className="absolute inset-0 rounded-xl md:rounded-2xl bg-gradient-to-r from-blue-500 to-purple-500 blur-lg opacity-50 animate-pulse" />
+                        <div className="absolute inset-0 rounded-xl md:rounded-2xl bg-linear-to-r from-blue-500 to-purple-500 blur-lg opacity-50 animate-pulse" />
                       )}
                     </button>
                     
@@ -569,9 +569,9 @@ const RegisterForm = ({ user }: { user: User }) => {
                       <div className={`
                         flex-1 h-1 mx-2 md:mx-4 rounded-full transition-all duration-500
                         ${completedSteps.includes(step.id) && completedSteps.includes(step.id + 1)
-                          ? 'bg-gradient-to-r from-green-500 to-teal-500' 
+                          ? 'bg-linear-to-r from-green-500 to-teal-500' 
                           : completedSteps.includes(step.id) || currentStep > step.id
-                          ? 'bg-gradient-to-r from-blue-500 to-purple-500' 
+                          ? 'bg-linear-to-r from-blue-500 to-purple-500' 
                           : 'bg-slate-700'
                         }
                       `} />
@@ -583,14 +583,14 @@ const RegisterForm = ({ user }: { user: User }) => {
           </div>
 
           <div className="relative z-10 max-w-6xl mx-auto px-2 sm:px-4 md:px-6 pb-12 md:pb-20">
-            <div className="rounded-2xl md:rounded-3xl border border-slate-700/50 bg-gradient-to-br from-slate-900/80 to-slate-800/80 p-4 md:p-6 lg:p-8 shadow-2xl backdrop-blur-xl">
+            <div className="rounded-2xl md:rounded-3xl border border-slate-700/50 bg-linear-to-br from-slate-900/80 to-slate-800/80 p-4 md:p-6 lg:p-8 shadow-2xl backdrop-blur-xl">
               <div className="flex items-center gap-3 md:gap-4 mb-6 md:mb-8">
                 <div className={`
                   flex items-center justify-center w-12 h-12 md:w-16 md:h-16 rounded-xl md:rounded-2xl shadow-lg
-                  ${currentStep === 1 ? 'bg-gradient-to-r from-blue-500 to-purple-500' :
-                    currentStep === 2 ? 'bg-gradient-to-r from-green-500 to-blue-500' :
-                    currentStep === 3 ? 'bg-gradient-to-r from-purple-500 to-pink-500' :
-                    'bg-gradient-to-r from-green-500 to-teal-500'
+                  ${currentStep === 1 ? 'bg-linear-to-r from-blue-500 to-purple-500' :
+                    currentStep === 2 ? 'bg-linear-to-r from-green-500 to-blue-500' :
+                    currentStep === 3 ? 'bg-linear-to-r from-purple-500 to-pink-500' :
+                    'bg-linear-to-r from-green-500 to-teal-500'
                   }
                 `}>
                   <span className="text-xl md:text-2xl">{steps[currentStep - 1].icon}</span>
@@ -616,7 +616,7 @@ const RegisterForm = ({ user }: { user: User }) => {
                     flex items-center gap-2 px-4 py-2 md:px-6 md:py-3 rounded-lg md:rounded-xl font-medium transition-all duration-300 w-full md:w-auto justify-center
                     ${currentStep === 1 
                       ? 'bg-slate-800 text-slate-500 cursor-not-allowed' 
-                      : 'bg-gradient-to-r from-slate-700 to-slate-600 text-white hover:from-slate-600 hover:to-slate-500 hover:scale-105'
+                      : 'bg-linear-to-r from-slate-700 to-slate-600 text-white hover:from-slate-600 hover:to-slate-500 hover:scale-105'
                     }
                   `}
                 >
@@ -633,7 +633,7 @@ const RegisterForm = ({ user }: { user: User }) => {
                       className={`
                         w-1.5 h-1.5 md:w-2 md:h-2 rounded-full transition-all duration-300
                         ${currentStep === step.id 
-                          ? 'bg-gradient-to-r from-blue-500 to-purple-500 w-6 md:w-8' 
+                          ? 'bg-linear-to-r from-blue-500 to-purple-500 w-6 md:w-8' 
                           : completedSteps.includes(step.id)
                           ? 'bg-green-500'
                           : 'bg-slate-600'
@@ -647,7 +647,7 @@ const RegisterForm = ({ user }: { user: User }) => {
                   <button
                     type="button"
                     onClick={nextStep}
-                    className="flex items-center gap-2 px-4 py-2 md:px-6 md:py-3 bg-gradient-to-r from-blue-600 to-blue-500 text-white font-medium rounded-lg md:rounded-xl hover:from-blue-400 hover:to-emerald-400 hover:scale-105 transition-all duration-300 w-full md:w-auto justify-center"
+                    className="flex items-center gap-2 px-4 py-2 md:px-6 md:py-3 bg-linear-to-r from-blue-600 to-blue-500 text-white font-medium rounded-lg md:rounded-xl hover:from-blue-400 hover:to-emerald-400 hover:scale-105 transition-all duration-300 w-full md:w-auto justify-center"
                   >
                     Next
                     <svg className="w-3 h-3 md:w-4 md:h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -657,7 +657,7 @@ const RegisterForm = ({ user }: { user: User }) => {
                 ) : (
                   <SubmitButton 
                     isLoading={isLoading} 
-                    className="bg-gradient-to-r from-green-500 to-teal-500 hover:from-green-400 hover:to-teal-400 text-white font-medium px-4 py-2 md:px-8 md:py-3 rounded-lg md:rounded-xl transition-all duration-300 hover:scale-105 w-full md:w-auto"
+                    className="bg-linear-to-r from-green-500 to-teal-500 hover:from-green-400 hover:to-teal-400 text-white font-medium px-4 py-2 md:px-8 md:py-3 rounded-lg md:rounded-xl transition-all duration-300 hover:scale-105 w-full md:w-auto"
                   >
                     {isLoading ? (
                       <span className="flex items-center gap-2 text-sm md:text-base">

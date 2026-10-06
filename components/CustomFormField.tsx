@@ -47,7 +47,7 @@ const RenderInput = ({ field, props }: { field: any; props: CustomProps }) => {
     case FormFieldType.INPUT:
       return (
         <div className="relative group">
-          <div className="absolute -inset-0.5 bg-gradient-to-r from-blue-500/20 to-emerald-500/20 rounded-xl blur opacity-0 group-hover:opacity-100 transition duration-300"></div>
+          <div className="absolute -inset-0.5 bg-linear-to-r from-blue-500/20 to-emerald-500/20 rounded-xl blur opacity-0 group-hover:opacity-100 transition duration-300"></div>
           <div className="relative flex items-center rounded-xl border border-slate-700/50 bg-slate-800/50 backdrop-blur-sm hover:border-slate-600/50 focus-within:border-blue-500/50 transition-all duration-300">
             {props.iconSrc && (
               <div className="flex items-center justify-center w-12 h-12 text-slate-400">
@@ -75,7 +75,7 @@ const RenderInput = ({ field, props }: { field: any; props: CustomProps }) => {
     case FormFieldType.TEXTAREA:
       return (
         <div className="relative group">
-          <div className="absolute -inset-0.5 bg-gradient-to-r from-blue-500/20 to-emerald-500/20 rounded-xl blur opacity-0 group-hover:opacity-100 transition duration-300"></div>
+          <div className="absolute -inset-0.5 bg-linear-to-r from-blue-500/20 to-emerald-500/20 rounded-xl blur opacity-0 group-hover:opacity-100 transition duration-300"></div>
           <div className="relative">
             <FormControl>
               <Textarea
@@ -92,7 +92,7 @@ const RenderInput = ({ field, props }: { field: any; props: CustomProps }) => {
     case FormFieldType.PHONE_INPUT:
       return (
         <div className="relative group">
-          <div className="absolute -inset-0.5 bg-gradient-to-r from-blue-500/20 to-emerald-500/20 rounded-xl blur opacity-0 group-hover:opacity-100 transition duration-300"></div>
+          <div className="absolute -inset-0.5 bg-linear-to-r from-blue-500/20 to-emerald-500/20 rounded-xl blur opacity-0 group-hover:opacity-100 transition duration-300"></div>
           <div className="relative">
             <FormControl>
               <PhoneInput
@@ -171,7 +171,7 @@ const RenderInput = ({ field, props }: { field: any; props: CustomProps }) => {
     case FormFieldType.SELECT:
       return (
         <div className="group relative">
-          <div className="absolute -inset-0.5 rounded-xl bg-gradient-to-r from-blue-500/20 to-emerald-500/20 opacity-0 blur transition duration-300 group-hover:opacity-100"></div>
+          <div className="absolute -inset-0.5 rounded-xl bg-linear-to-r from-blue-500/20 to-emerald-500/20 opacity-0 blur transition duration-300 group-hover:opacity-100"></div>
           <div className="relative">
             <FormControl>
               <Select onValueChange={field.onChange} defaultValue={field.value}>

@@ -328,7 +328,7 @@ const RequestSuccess = ({
       {/* Enhanced Animated Background */}
       <div className="absolute inset-0 overflow-hidden">
         <motion.div 
-          className={`absolute -top-4 -right-4 w-48 h-48 sm:w-72 sm:h-72 bg-gradient-to-br ${statusConfig.color} opacity-10 rounded-full blur-3xl`}
+          className={`absolute -top-4 -right-4 w-48 h-48 sm:w-72 sm:h-72 bg-linear-to-br ${statusConfig.color} opacity-10 rounded-full blur-3xl`}
           animate={{
             scale: [1, 1.2, 1],
             rotate: [0, 180, 360],
@@ -341,7 +341,7 @@ const RequestSuccess = ({
           }}
         />
         <motion.div 
-          className={`absolute top-1/2 -left-8 w-64 h-64 sm:w-96 sm:h-96 bg-gradient-to-br ${statusConfig.color} opacity-5 rounded-full blur-3xl`}
+          className={`absolute top-1/2 -left-8 w-64 h-64 sm:w-96 sm:h-96 bg-linear-to-br ${statusConfig.color} opacity-5 rounded-full blur-3xl`}
           animate={{
             scale: [1, 0.8, 1],
             x: [0, 20, 0],
@@ -355,7 +355,7 @@ const RequestSuccess = ({
           }}
         />
         <motion.div 
-          className={`absolute bottom-0 right-1/3 w-40 h-40 sm:w-64 sm:h-64 bg-gradient-to-br ${statusConfig.color} opacity-10 rounded-full blur-3xl`}
+          className={`absolute bottom-0 right-1/3 w-40 h-40 sm:w-64 sm:h-64 bg-linear-to-br ${statusConfig.color} opacity-10 rounded-full blur-3xl`}
           animate={{
             scale: [1, 1.3, 1],
             y: [0, -30, 0],
@@ -421,7 +421,7 @@ const RequestSuccess = ({
           >
             <div className="w-24 h-24 sm:w-32 sm:h-32 mx-auto relative">
               <motion.div 
-                className={`absolute inset-0 bg-gradient-to-br ${statusConfig.color} rounded-full`}
+                className={`absolute inset-0 bg-linear-to-br ${statusConfig.color} rounded-full`}
                 animate={{
                   scale: [1, 1.2, 1],
                   opacity: [0.2, 0.4, 0.2]
@@ -433,7 +433,7 @@ const RequestSuccess = ({
                 }}
               />
               <motion.div 
-                className={`absolute inset-1 sm:inset-2 bg-gradient-to-br ${statusConfig.color} rounded-full flex items-center justify-center shadow-2xl`}
+                className={`absolute inset-1 sm:inset-2 bg-linear-to-br ${statusConfig.color} rounded-full flex items-center justify-center shadow-2xl`}
                 initial={{ scale: 0, rotate: -180 }}
                 animate={{ scale: 1, rotate: 0 }}
                 transition={{ duration: 0.8, ease: "backOut", delay: 0.3 }}
@@ -453,7 +453,7 @@ const RequestSuccess = ({
               transition={{ duration: 0.8, delay: 0.5 }}
             >
               <motion.span 
-                className={`bg-gradient-to-r ${statusConfig.color} bg-clip-text text-transparent`}
+                className={`bg-linear-to-r ${statusConfig.color} bg-clip-text text-transparent`}
                 animate={{ 
                   backgroundPositionX: ["0%", "100%", "0%"] 
                 }}
@@ -492,7 +492,7 @@ const RequestSuccess = ({
             transition={{ duration: 0.6, delay: 0.8 }}
           >
             <motion.div 
-              className={`bg-gradient-to-r ${statusConfig.color} p-4 sm:p-6`}
+              className={`bg-linear-to-r ${statusConfig.color} p-4 sm:p-6`}
               initial={{ x: -100, opacity: 0 }}
               animate={{ x: 0, opacity: 1 }}
               transition={{ duration: 0.8, delay: 1 }}
@@ -500,7 +500,7 @@ const RequestSuccess = ({
               <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3">
                 <h2 className="text-lg sm:text-xl md:text-2xl font-bold text-white flex items-center">
                   <motion.svg 
-                    className="w-5 h-5 sm:w-6 sm:h-6 mr-2 sm:mr-3 flex-shrink-0" 
+                    className="w-5 h-5 sm:w-6 sm:h-6 mr-2 sm:mr-3 shrink-0" 
                     fill="none" 
                     stroke="currentColor" 
                     viewBox="0 0 24 24"
@@ -532,7 +532,7 @@ const RequestSuccess = ({
               <AnimatePresence>
                 {appointment.status === 'scheduled' && timeLeft && (
                   <motion.div
-                    className="bg-gradient-to-r from-green-500/10 to-emerald-500/10 border border-green-500/30 rounded-xl sm:rounded-2xl p-3 sm:p-4 text-center"
+                    className="bg-linear-to-r from-green-500/10 to-emerald-500/10 border border-green-500/30 rounded-xl sm:rounded-2xl p-3 sm:p-4 text-center"
                     initial={{ opacity: 0, height: 0 }}
                     animate={{ opacity: 1, height: "auto" }}
                     exit={{ opacity: 0, height: 0 }}
@@ -572,7 +572,7 @@ const RequestSuccess = ({
                 transition={{ duration: 0.6, delay: 1.3 }}
                 whileHover={{ scale: 1.02 }}
               >
-                <div className="relative flex-shrink-0">
+                <div className="relative shrink-0">
                   <motion.div
                     whileHover={{ scale: 1.1 }}
                     transition={{ duration: 0.3 }}
@@ -617,7 +617,7 @@ const RequestSuccess = ({
                 whileHover={{ scale: 1.02 }}
               >
                 <motion.div 
-                  className={`w-10 h-10 sm:w-12 sm:h-12 bg-gradient-to-br ${statusConfig.color} rounded-lg sm:rounded-xl flex items-center justify-center shadow-lg flex-shrink-0`}
+                  className={`w-10 h-10 sm:w-12 sm:h-12 bg-linear-to-br ${statusConfig.color} rounded-lg sm:rounded-xl flex items-center justify-center shadow-lg shrink-0`}
                   whileHover={{ rotate: 10 }}
                   transition={{ duration: 0.3 }}
                 >
@@ -631,7 +631,7 @@ const RequestSuccess = ({
                      appointment.status === 'cancelled' ? 'Original Date & Time' : 
                      'Requested Date & Time'}
                   </p>
-                  <p className={`text-base sm:text-lg md:text-xl font-bold break-words ${
+                  <p className={`text-base sm:text-lg md:text-xl font-bold wrap-break-word ${
                     appointment.status === 'cancelled' ? 'text-slate-500 line-through' : 'text-white'
                   }`}>
                     {formatDateTime(appointment.schedule).dateTime}
@@ -651,7 +651,7 @@ const RequestSuccess = ({
                   >
                     <div className="flex items-center space-x-2 mb-2">
                       <motion.svg 
-                        className="w-4 h-4 sm:w-5 sm:h-5 text-green-400 flex-shrink-0" 
+                        className="w-4 h-4 sm:w-5 sm:h-5 text-green-400 shrink-0" 
                         fill="none" 
                         stroke="currentColor" 
                         viewBox="0 0 24 24"
@@ -688,7 +688,7 @@ const RequestSuccess = ({
                   >
                     <div className="flex items-center space-x-2 mb-2">
                       <motion.svg 
-                      className="w-4 h-4 sm:w-5 sm:h-5 text-red-400 flex-shrink-0" 
+                      className="w-4 h-4 sm:w-5 sm:h-5 text-red-400 shrink-0" 
                       fill="none" 
                       stroke="currentColor" 
                       viewBox="0 0 24 24"
@@ -726,7 +726,7 @@ const RequestSuccess = ({
         >
           <Button 
             asChild 
-            className={`w-full sm:w-auto bg-gradient-to-r ${statusConfig.color} hover:shadow-2xl text-white px-6 sm:px-8 py-3 sm:py-4 rounded-xl sm:rounded-2xl font-semibold text-sm sm:text-base md:text-lg shadow-xl border-0 relative overflow-hidden group`}
+            className={`w-full sm:w-auto bg-linear-to-r ${statusConfig.color} hover:shadow-2xl text-white px-6 sm:px-8 py-3 sm:py-4 rounded-xl sm:rounded-2xl font-semibold text-sm sm:text-base md:text-lg shadow-xl border-0 relative overflow-hidden group`}
           >
             <Link href={
               appointment.status === 'scheduled' ? `/patients/${userId}/appointments/${appointmentId}` : 
@@ -739,7 +739,7 @@ const RequestSuccess = ({
                 transition={{ duration: 0.6 }}
               />
               <motion.svg 
-                className="w-4 h-4 sm:w-5 sm:h-5 mr-2 flex-shrink-0" 
+                className="w-4 h-4 sm:w-5 sm:h-5 mr-2 shrink-0" 
                 fill="none" 
                 stroke="currentColor" 
                 viewBox="0 0 24 24"
@@ -767,13 +767,13 @@ const RequestSuccess = ({
               appointment.status === 'cancelled' ? '/contact' : '/'
             }>
               <motion.div
-                className={`absolute inset-0 bg-gradient-to-r ${statusConfig.color} opacity-10`}
+                className={`absolute inset-0 bg-linear-to-r ${statusConfig.color} opacity-10`}
                 initial={{ scale: 0 }}
                 whileHover={{ scale: 1 }}
                 transition={{ duration: 0.3 }}
               />
               <motion.svg 
-                className="w-4 h-4 sm:w-5 sm:h-5 mr-2 flex-shrink-0 relative z-10" 
+                className="w-4 h-4 sm:w-5 sm:h-5 mr-2 shrink-0 relative z-10" 
                 fill="none" 
                 stroke="currentColor" 
                 viewBox="0 0 24 24"
@@ -819,12 +819,12 @@ const RequestSuccess = ({
                 animate={{ opacity: 1, x: 0 }}
                 transition={{ duration: 0.6, delay: 2.2 + index * 0.2 }}
               >
-                <div className="flex flex-col items-center flex-shrink-0">
+                <div className="flex flex-col items-center shrink-0">
                   <motion.div 
                     className={`w-6 h-6 sm:w-8 sm:h-8 rounded-full flex items-center justify-center shadow-lg transition-all duration-300 ${
                       step.cancelled ? 'bg-red-500' :
                       step.completed ? 'bg-green-500' : 
-                      step.current ? `bg-gradient-to-r ${statusConfig.color}` : 
+                      step.current ? `bg-linear-to-r ${statusConfig.color}` : 
                       'bg-slate-600'
                     }`}
                     animate={step.current && !step.completed ? { 
@@ -904,7 +904,7 @@ const RequestSuccess = ({
                   }`}>
                     {step.title}
                   </p>
-                  <p className="mt-1 break-words text-xs text-slate-500 sm:text-sm">{step.description}</p>
+                  <p className="mt-1 wrap-break-word text-xs text-slate-500 sm:text-sm">{step.description}</p>
                 </motion.div>
               </motion.div>
             ))}

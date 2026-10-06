@@ -135,7 +135,7 @@ export const AppointmentForm = ({
           <section className="mb-6 space-y-2">
             <div className="flex items-center gap-3">
               <div className="relative">
-                <div className="p-2.5 bg-gradient-to-br from-emerald-500/20 to-emerald-600/20 rounded-xl border border-emerald-500/30 backdrop-blur-sm">
+                <div className="p-2.5 bg-linear-to-br from-emerald-500/20 to-emerald-600/20 rounded-xl border border-emerald-500/30 backdrop-blur-sm">
                   <svg className="w-5 h-5 text-emerald-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
                   </svg>
@@ -143,10 +143,10 @@ export const AppointmentForm = ({
                 <div className="absolute -top-1 -right-1 w-3 h-3 bg-emerald-400 rounded-full animate-pulse"></div>
               </div>
               <div>
-                <h1 className="text-xl font-bold bg-gradient-to-r from-slate-100 via-white to-slate-200 bg-clip-text text-transparent">
+                <h1 className="text-xl font-bold bg-linear-to-r from-slate-100 via-white to-slate-200 bg-clip-text text-transparent">
                   New Appointment
                 </h1>
-                <div className="h-0.5 w-12 bg-gradient-to-r from-emerald-400 to-teal-500 rounded-full"></div>
+                <div className="h-0.5 w-12 bg-linear-to-r from-emerald-400 to-teal-500 rounded-full"></div>
               </div>
             </div>
             <p className="text-slate-400 text-sm ml-12">
@@ -159,7 +159,7 @@ export const AppointmentForm = ({
           <>
             {/* Doctor Selection */}
             <div className="relative group">
-              <div className="absolute inset-0 bg-gradient-to-r from-emerald-500/5 to-teal-500/5 rounded-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+              <div className="absolute inset-0 bg-linear-to-r from-emerald-500/5 to-teal-500/5 rounded-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
               <div className="relative bg-slate-800/40 backdrop-blur-xl border border-slate-700/50 rounded-xl p-3 hover:border-emerald-500/40 transition-all duration-300 hover:shadow-lg hover:shadow-emerald-500/10">
                 <div className="relative z-20">
                   <CustomFormField
@@ -193,7 +193,7 @@ export const AppointmentForm = ({
 
             {/* Date Selection */}
             <div className="relative group">
-              <div className="absolute inset-0 bg-gradient-to-r from-blue-500/5 to-indigo-500/5 rounded-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+              <div className="absolute inset-0 bg-linear-to-r from-blue-500/5 to-indigo-500/5 rounded-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
               <div className="relative bg-slate-800/40 backdrop-blur-xl border border-slate-700/50 rounded-xl p-3 hover:border-blue-500/40 transition-all duration-300 hover:shadow-lg hover:shadow-blue-500/10 z-30">
                 <CustomFormField
                   fieldType={FormFieldType.DATE_PICKER}
@@ -209,7 +209,7 @@ export const AppointmentForm = ({
             {/* Reason and Notes - Responsive Grid */}
             <div className={`grid gap-3 ${type === "create" ? "xl:grid-cols-2" : "grid-cols-1"}`}>
               <div className="relative group">
-                <div className="absolute inset-0 bg-gradient-to-r from-green-500/5 to-green-500/5 rounded-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                <div className="absolute inset-0 bg-linear-to-r from-green-500/5 to-green-500/5 rounded-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                 <div className="relative bg-slate-800/40 backdrop-blur-xl border border-slate-700/50 rounded-xl p-3 hover:border-green-500/40 transition-all duration-300 hover:shadow-lg hover:shadow-purple-500/10">
                   <CustomFormField
                     fieldType={FormFieldType.TEXTAREA}
@@ -223,7 +223,7 @@ export const AppointmentForm = ({
               </div>
 
               <div className="relative group">
-                <div className="absolute inset-0 bg-gradient-to-r from-amber-500/5 to-orange-500/5 rounded-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                <div className="absolute inset-0 bg-linear-to-r from-amber-500/5 to-orange-500/5 rounded-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                 <div className="relative bg-slate-800/40 backdrop-blur-xl border border-slate-700/50 rounded-xl p-3 hover:border-blue-700/40 transition-all duration-300 hover:shadow-lg hover:shadow-blue-700/10">
                   <CustomFormField
                     fieldType={FormFieldType.TEXTAREA}
@@ -241,7 +241,7 @@ export const AppointmentForm = ({
 
         {type === "cancel" && (
           <div className="relative group">
-            <div className="absolute inset-0 bg-gradient-to-r from-red-500/5 to-rose-500/5 rounded-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+            <div className="absolute inset-0 bg-linear-to-r from-red-500/5 to-rose-500/5 rounded-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
             <div className="relative bg-slate-800/40 backdrop-blur-xl border border-slate-700/50 rounded-xl p-3 hover:border-red-500/40 transition-all duration-300 hover:shadow-lg hover:shadow-red-500/10">
               <CustomFormField
                 fieldType={FormFieldType.TEXTAREA}
@@ -260,8 +260,8 @@ export const AppointmentForm = ({
             isLoading={isLoading}
             className={`${
               type === "cancel" 
-                ? "bg-gradient-to-r from-red-500/90 to-red-600/90 hover:from-red-500 hover:to-red-600 shadow-lg shadow-red-500/20 hover:shadow-red-500/30" 
-                : "bg-gradient-to-r from-emerald-500/90 to-green-600/90 hover:from-emerald-500 hover:to-green-600 shadow-lg shadow-emerald-500/20 hover:shadow-emerald-500/30"
+                ? "bg-linear-to-r from-red-500/90 to-red-600/90 hover:from-red-500 hover:to-red-600 shadow-lg shadow-red-500/20 hover:shadow-red-500/30" 
+                : "bg-linear-to-r from-emerald-500/90 to-green-600/90 hover:from-emerald-500 hover:to-green-600 shadow-lg shadow-emerald-500/20 hover:shadow-emerald-500/30"
             } w-full backdrop-blur-xl border border-emerald-500/30 transition-all duration-300 hover:scale-[1.01] hover:-translate-y-0.5`}
           >
             {buttonLabel}
